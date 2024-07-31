@@ -49,6 +49,6 @@ jobs:
         
       - name: Sync Docker Image
         run: |
-          docker pull <source-image-name>:<source-tag>
-          docker tag <source-image-name>:<source-tag> <target-image-name>:<target-tag>
-          docker push <target-image-name>:<target-tag>
+          docker pull jellyfin/jellyfin:latest
+          docker tag jellyfin/jellyfin:latest jellyfin/jellyfin:latest
+          docker push jellyfin/jellyfin:latest
